@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>myMemoPad</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Memo Pad</h1>
+
+  <main>
+    <div class="input-area">
+      <input id="title" type="text" placeholder="タイトルを入力">
+      <textarea id="text" placeholder="本文を入力"></textarea>
+    </div>
+
+    <div class="button-area">
+      <button id="save">セーブ</button>
+      <button id="clear">全て削除</button>
+    </div>
+
+    <div id="editForm" style="display: none;">
+      <label for="editTitle">Title:</label>
+      <input type="text" id="editTitle"><br>
+      <label for="editText">Text:</label>
+      <textarea id="editText"></textarea><br>
+                <p id="editTimestamp"></p>
+      <button id="saveEdit">更新</button>
+  </div>
+
+  </main>
+
+  <ul id="list">
+    <!-- ここに追加データが挿入される -->
+  </ul>
+  <footer>
+    Gs
+  </footer>
+
+  <!-- 以下にjsを書いていきます -->
+
+      <!-- jqueryの読み込み（記述）が絶対に先！！！ -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <!-- js/test.jsは絶対にjqueryの後 -->
+      <script src="js/index.js"></script>
+
+</body>
+
+</html>
