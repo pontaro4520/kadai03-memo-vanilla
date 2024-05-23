@@ -3,37 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>myMemoPad</title>
+  <title>To do</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <h1>Memo Pad</h1>
+<body class=>
+  <h1>やることリスト</h1>
 
   <main>
     <div class="input-area">
-      <textarea id="text" placeholder="本文を入力"></textarea>
+      <textarea id="task-text" placeholder="やることを書く"></textarea>
     </div>
 
     <div class="button-area">
       <button id="save">セーブ</button>
-      <button id="clear">全て削除</button>
     </div>
 
-    <div id="editForm" style="display: none;">
-      <label for="editTitle">Title:</label>
-      <input type="text" id="editTitle"><br>
-      <label for="editText">Text:</label>
-      <textarea id="editText"></textarea><br>
-                <p id="editTimestamp"></p>
-      <button id="saveEdit">更新</button>
+ 
   </div>
 
   </main>
 
-  <ul id="list">
+  <ul id="task-list" class="text-wrap">
     <!-- ここに追加データが挿入される -->
   </ul>
   <footer>
